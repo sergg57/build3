@@ -1,0 +1,13 @@
+.down-arrow{
+  bottom: 40px;
+  @include centered(x);
+
+}
+
+/*
+.down-arrow {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}*/

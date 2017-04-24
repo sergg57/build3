@@ -1,0 +1,34 @@
+//Created by serg on 23.04.17.
+
+section.section.map
+        .map-container
+             img(src="../../", alt="").map-picture
+             .map-marker
+                .marker
+                    svg.map map_size
+             .block-contacts
+                 .contacts__title
+                     .subtitle
+                         | КОНТАКТЫ
+
+                     ul.contacts-list
+                         each item in ['skype','mail','phone','adress']
+                             li.contacts-list__item
+                                svg(class=`contacts-list__icon contact-list__icon_${item}`)
+                                a(href="" class=`contacts-list__link contact-list__link_${item}`)
+
+                     //ul.contacts-list
+                         li.contacts-list__item
+                            svg.contacts-list__icon.contact-list__icon_skype
+                            a(href="").contacts-list__link.contact-list__link_skype
+                         li.contacts-list__item
+                            svg.contacts-list__icon.contact-list__icon_mail
+                            a(href="").contacts-list__link.contact-list__link_mail
+                         li.contacts-list__item
+                            svg.contacts-list__icon.contact-list__icon_phone
+                            a(href="").contacts-list__link.contact-list__link_phone
+                         li.contacts-list__item
+                            svg.contacts-list__icon.contact-list__icon_adress
+                            a(href="").contacts-list__link.contact-list__link_
+
+        block map

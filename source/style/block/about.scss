@@ -1,0 +1,28 @@
+.about {
+  @extend %clearfix;
+  border: 1px solid red;
+}
+
+.about__left, .about__right {
+  float: left;
+  width: 50%;
+  position: relative;
+  border: 1px solid black;
+}
+
+.about__left {
+  background: $beige1;
+  //background: $white;
+
+}
+
+.about__right {
+  background: $white1;
+  //background: $beige;
+}
+
+.about__triangles {
+  position: absolute;
+  bottom: 100%;
+}
+
