@@ -1,0 +1,38 @@
+//Created by serg on 23.04.17.
+
+section.section.about
+        .about__left
+            svg.triangle.triangle_fill_white
+            // Дописать подложку
+            .title.about__section-title
+                | Обо мне
+            .user-about
+                .user-about__picture
+                .user-about__title
+                    .subtitle
+                        | Кто Я
+                .user-about__text
+                    // Здесь будет редактор WISYWUG, поэтому стили будет задавать он но свои надо задачть в начале этого файла
+                    p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                    p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+        .about__right
+            svg.triangle.triangle_fill_beige
+            .about-data
+                .about-data__description.about-user-info
+                    .about-user-info__title
+                        .subttitle Чем я могу быть полезен
+                    .about-user-info__text
+                        p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
+                .about-user-info__content
+                    ui.skills
+                        each skill in ['Frontend','Backend','Workflow']
+                            li.skills_items
+                                .skill-section
+                                    .skill-section__title=skill
+                                    ul.skill-section__list
+                                        each skillName in ['HTML5','CSS3','JQuery']
+                                            li.skill-section__item
+                                                .skill
+                                                    svg.skill__circle
+                                                        .skill__name=skillName
+        block about_me

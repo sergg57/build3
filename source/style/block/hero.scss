@@ -1,0 +1,34 @@
+.hero {
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+/*
+.hero__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.hero__user-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+*/
+
+.hero__title {
+  @include centered(y);
+  text-align: center;
+  width: 100%;
+}
+
+
+.hero__user-block {
+  @include centered();
+}
+

@@ -1,0 +1,17 @@
+.map-container {
+  height: 1114px;
+  overflow: hidden;
+  position: relative;
+  background-image: url(../img/content/map1.png);
+  border: 1px solid yellow;
+}
+
+.block-contacts {
+  @include centered('both');
+  text-align: center;
+  height: 380px;
+  width: 315px;
+  background-color: rgba(#f6f6f2, 0.8);
+
+  border: 1px solid cyan;
+}

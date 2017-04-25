@@ -1,0 +1,44 @@
+//Created by serg on 23.04.17.
+
+section.footer
+    .footer-content
+        .footer-customer
+            .footer-customer__text
+                p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+        .footer-split
+            svg.split.split_right
+        .footer-navbar
+            ul.navbar-menu
+                //each item, index in {1:'Мои работы',2:'Обо мне', 3:'Блог',4:'Авторизация'}
+                    li.navbar-menu__item
+                        a(href="" class=`navbar-menu__item-'+${index} ${item}`) ``
+            ul.navbar-menu
+                li.navbar-menu__item
+                    a(href="").navbar-menu__item-1 Мои работы
+                li.navbar-menu__item
+                    a(href="").navbar-menu__item-2 Обо мне
+                li.navbar-menu__item
+                    a(href="").navbar-menu__item-3 Блог
+                li.navbar-menu__item
+                    a(href="").navbar-menu__item-4 Авторизация
+
+        .footer-social
+            ul.socials
+                each item in ['vk', 'gh', 'in']
+                    li.socials__item
+                        a(href='' class=`socials_link socials__link_${item}`)
+
+        .footer-split
+            svg.split.split_left
+
+        .footer-quote
+            .footer-quote__text
+                p Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете.
+                p — Martin Golding
+
+    .footer-copyright
+        .footer-copyrite__text
+            p © Владимир Астахов | Создано с любовью в LoftSchool | 2016
+
+    block footer
+

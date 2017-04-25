@@ -1,0 +1,41 @@
+.title {
+  //color: $main-font-color;
+  color: $main-font-color2;
+  font-size: 63px;
+  @include bernier(normal);
+  padding: 45px 80px; // 35px 80px
+  display: inline-block;
+  position: relative;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  //border: 1px solid magenta;
+
+  $margin: 40px;
+
+/*  &:after, &:before {
+    content: "";
+    display: block;
+    @include centered(y);
+    background: rgba($main-font-color1, .2);
+    width: 22px;
+    height: 5px;
+  }
+
+  &:after {
+    right: $margin;
+  }
+  &:before {
+    left: $margin;
+  }*/
+
+  &:after {
+    content: '';
+    display: block;
+    @include centered(x);
+    background: rgba($main-font-color2, 1);
+    width: 100px;
+    height: 5px;
+  }
+
+}
