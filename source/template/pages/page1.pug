@@ -9,58 +9,58 @@ block content
             svg(
                 viewbox ="0 0 1000 100"
                 preserveAspectRatio = "none"
-                class="triangle triangle_fill_beige about__triangles"
+                class="triangle triangle_fill_white about__triangles"
                 )
                 polygon(points="0,0 0,1000, 1000,100")
 
             //- Дописать подложку
-            //.title.about__section-title
-            +title('Обо мне', 'about-header1.png', 'about__section-title')
-            //-+title('Новый заголовок!', 'works-header1.png')
-            //.title(style="background-image: url('img/decor/about-heder.png')").about__section-title
-            //-.title.about__section-title
-                | Обо мне
-            .user-about
-                .user-about__picture
-                .user-about__title
-                    .subtitle
-                        | Кто Я
-                .user-about__text
-                    // Здесь будет редактор WISYWUG, поэтому стиле будет задавать он но свои надо задачть в начале этого файла
-                    p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
-                    p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+            .about__section-title
+                //- Для макета forest
+                //-+title('Обо мне', 'about-header1.png', 'about__section-title', '48px')
+                +title('Обо мне', 'about-header.png', 'about__section-title', '63px')
+                //-+title('Новый заголовок!', 'works-header1.png')
+                //.title(style="background-image: url('img/decor/about-heder.png')").about__section-title
+                //-.title.about__section-title
+                    | Обо мне
+                .user-about
+                    .user-about__picture
+                        //-img(src="./assets/img/content/my_about.jpg", alt="").about__photo
+                        img(src="./assets/img/content/about.jpg", alt="").about__photo
+                    //.user-about__title
+                    +title('Кто Я','' , 'user-about__title', '30px')
+                        //-.subtitle
+                            | Кто Я
+                    .user-about__text
+                        // Здесь будет редактор WISYWUG, поэтому стиле будет задавать он но свои надо задачть в начале этого файла
+                        p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                        p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
         .about__right
             svg(
-                viewbox ="0 0 1000 100"
-                preserveAspectRatio = "none"
-                class="triangle triangle_fill_white about__triangles"
-                )
+            viewbox ="0 0 1000 100"
+            preserveAspectRatio = "none"
+            class="triangle triangle_fill_beige about__triangles"
+            )
                 polygon(points="0,100 1000,100, 1000,0")
             .about-data
                 .about-data__description.about-user-info
-                    .about-user-info__title
-                        .subttitle Чем я могу быть полезен
+                    +title('Чем я могу быть','' , 'about-user-info__title', '34px')
+                    +title('вам полезен','' , 'about-user-info__title1', '34px')
+
+                    //-.about-user-info__title
+                        .subttitle Чем я могу быть вам полезен
                     .about-user-info__text
                         p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
                 .about-user-info__content
-                    ui.skills
-                        each skill in ['Frontend','Backend','Workflow']
-                            li.skills_items
-                                .skill-section
-                                    .skill-section__title=skill
-                                    ul.skill-section__list
-                                        each skillName in ['HTML5','CSS3','JQuery']
-                                            li.skill-section__item
-                                                .skill
-                                                    svg.skill__circle
-                                                        .skill__name=skillName
+                    include ../common/user_instuments
+
     section.section.map
         .map-container
              //img(src="/assets/img/content/map1.png", alt="").map-picture
              .block-contacts
                 .contacts__title
-                    .subtitle
-                        | КОНТАКТЫ
+                    +title('Контакты', 'works-header1.png','contacts__title', '30px')
+                    //subtitle
+                       | КОНТАКТЫ
 
                     ul.contacts-list
                         each item in ['skype','mail','phone','adress']

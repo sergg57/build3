@@ -1,0 +1,24 @@
+.user-about {
+  display: flex;
+  //flex-flow: column wrap;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  //border: 1px solid maroon;
+}
+
+.about__photo {
+  //display: block;
+  margin-left: 20px;
+  margin-top: 36px;
+  //border: 1px solid green;
+}
+
+.user-about__title {
+  padding: 0px 80px;
+}
+
+.user-about__text {
+  max-width: 420px;
+  font-size: 18px;
+}

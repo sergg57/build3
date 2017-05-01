@@ -4,13 +4,15 @@
 
   &_fill{
 
-    &_beige{
-      //fill: $beige;
-      fill: $beige1;
-    }
     &_white{
-      //fill: $white;
-      fill: $white1;
+      fill: $white;
+      //fill: $white1; /* для макета forest  */
     }
+
+    &_beige{
+      fill: $beige;
+      //fill: $beige1; /* для макета forest  */
+    }
+
   }
 }

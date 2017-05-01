@@ -1,6 +1,6 @@
 .about {
   @extend %clearfix;
-  border: 1px solid red;
+  //border: 1px solid red;
 }
 
 .about__left, .about__right {
@@ -8,21 +8,29 @@
   width: 50%;
   position: relative;
   border: 1px solid black;
+
+  //@include centered(y);
 }
 
 .about__left {
-  background: $beige1;
-  //background: $white;
+  //background: $beige1; /* для макета forest */
+  background: $white;
 
 }
 
 .about__right {
-  background: $white1;
-  //background: $beige;
+  //background: $white1;  /* для макета forest */
+  background: $beige;
 }
 
 .about__triangles {
   position: absolute;
   bottom: 100%;
 }
-
+/*
+.about__left .about__section-title {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid maroon;
+}
+*/
