@@ -56,7 +56,7 @@ ui.skills
             .skill-section
                 //-.skill-section__title=skill
                 +title(skill,'','skill-section__title', '24px')
-                -console.log('skill=',skill)
+                //- -console.log('skill=',skill)
                 if skill=='Frontend'
                     -var v1=Frontend
                 else if skill=='Backend'
@@ -66,8 +66,8 @@ ui.skills
                 ul.skill-section__list
                     //-Frontend
                     each skillName in v1
-                        -console.log(skillName)
-                        //-console.log(skillName.prop)
+                        //-console.log(skillName)
+                        //- -console.log(skillName.prop)
                         li.skill-section__item
                             .skill
                                 svg(
@@ -85,7 +85,7 @@ ui.skills
                                     class="circle__second circle-"+`${skillName['prop']}`
                                     )
                                     .skill__name=skillName.instrument
-                                    //-console.log(skillName.instrument)
+                                    //- -console.log(skillName.instrument)
 
 
 

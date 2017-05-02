@@ -1,15 +1,19 @@
 
-.socials {
+.footer-social {
   display: flex;
   flex-direction: row;
-  justify-content:center ;
-  position: absolute;
+  justify-content:flex-end ;
+  align-items: center;
+  //position: absolute;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  padding-right: 30px;
+  //border: 1px solid red;
 }
 
-.socials__link {
+
+.footer-socials__link {
   //display: flex;
   line-height: 2rem;
   display: inline-block;
@@ -17,28 +21,17 @@
   height: 35px;
   margin-left: 10px;
   vertical-align: middle;
+  //fill: rgba(#555b5e, 0.1);
   fill: #c2d6d6;
   //fill: #ffffff;
-  //border: 1px solid yellow;
+  //border: 1px solid red;
 }
 
 
-.socials__link:hover {
+.footer-socials__link:hover {
   fill: #ffffff;
   //fill: #6c9c5a;
 }
-.socials__link:active {
+.footer-socials__link:active {
   fill: red;
 }
-
-/*
-.socials__link_vk{
-  margin-left: 30px;
-}
-.socials__link_github {
-  margin-left: 25px;
-}
-.socials__link_in {
-  margin-left: 30px;
-}
-*/

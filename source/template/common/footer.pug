@@ -1,10 +1,44 @@
-//Created by serg on 23.04.17.
+//-Created by serg on 23.04.17.
+
 
 section.footer
     .footer-content
+        .footer-navbar
+            //-ul.navbar-menu
+                //each item, index in {1:'Мои работы',2:'Обо мне', 3:'Блог',4:'Авторизация'}
+                    li.navbar-menu__item
+                        a(href="" class=`navbar-menu__item-'+${index} ${item}`) ``
+            ul.navbar-menu
+                li.navbar-menu__item
+                    a(href="") Мои работы
+                li.navbar-menu__item
+                    a(href="") Обо мне
+                li.navbar-menu__item
+                    a(href="") Блог
+                li.navbar-menu__item
+                    a(href="") Авторизация
+
+            .footer-social
+                include ../common/footer_social_icons
+
+    .footer-copyright
+        .footer-copyright__about
+            p.footer-copyright__about-text Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамка
+            p.footer-copyright__about-text обучения в Школе онлайн образования LoftSchool.
+        .footer-copyright__customer
+            p.footer-copyright__customer-text © Владимир Астахов | Создано с любовью в LoftSchool | 2017
+
+
+
+
+
+
+//-section.footer
+    .footer-content
         .footer-customer
             .footer-customer__text
-                p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+                p Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамка
+                p обучения в Школе онлайн образования LoftSchool.
         .footer-split
             svg.split.split_right
         .footer-navbar
