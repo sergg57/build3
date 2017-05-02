@@ -1,0 +1,40 @@
+.contacts__list__item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  //border: 1px solid yellow;
+  //border: 1px solid maroon;
+}
+/*
+.contacts-list__link {
+  //display: flex;
+  line-height: 2rem;
+  display: inline-block;
+  width: 37px;
+  height: 35px;
+  margin-left: 10px;
+  vertical-align: middle;
+  fill: #00bea4;
+  border: 1px solid yellow;
+  float: left;
+}
+*/
+
+.contacts-list__icon{
+  display: flex;
+  flex-direction: row;
+  line-height: 2rem;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  //vertical-align: middle;
+  fill: #00bea4;
+  //border: 1px solid yellow;
+}
+
+.contacts-list__subscrube {
+  margin-left: 20px;
+  margin-bottom: 27px;
+}

@@ -1,3 +1,3 @@
 //-Created by serg on 23.04.17.
-mixin title (title, url, additionClass)
-  .title(style=`background-image: url('/assets/img/decor/${url}')` class=additionClass)= title
+mixin title (title, url, additionClass, size)
+  .title(style=`background-image: url('./assets/img/decor/${url}');font-size:${size}` class=additionClass)= title

@@ -1,41 +1,50 @@
-.title {
+.title  {
   //color: $main-font-color;
   color: $main-font-color2;
-  font-size: 63px;
+  //$size:63px;
+  //font-size: $size;
   @include bernier(normal);
-  padding: 45px 80px; // 35px 80px
-  display: inline-block;
-  position: relative;
+
+  padding: 15px 80px; // 35px 80px
+  //display: inline-block;
+  display: flex;
+  justify-items: center;
+
+  position: relative; /* позиционирование "чёрточек"  */
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  //border: 1px solid magenta;
+ // border: 1px solid magenta;
+  //float: left;
 
   $margin: 40px;
 
-/*  &:after, &:before {
+ &:after, &:before {
     content: "";
-    display: block;
+    //display: block;
+    display: flex;
     @include centered(y);
-    background: rgba($main-font-color1, .2);
+    background: rgba($main-font-color1, .5);
+    background: rgba($main-font-color2, .2);
     width: 22px;
     height: 5px;
   }
 
-  &:after {
-    right: $margin;
-  }
-  &:before {
+ &:after {
+   right: $margin;
+ }
+ &:before {
     left: $margin;
-  }*/
+ }
 
+/* для макета forest
   &:after {
     content: '';
     display: block;
     @include centered(x);
     background: rgba($main-font-color2, 1);
     width: 100px;
-    height: 5px;
+    height: 3px;
   }
-
+*/
 }

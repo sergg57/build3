@@ -3,23 +3,18 @@
   overflow: hidden;
   position: relative;
 }
-/*
-.hero__title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: 100%;
-}
 
-.hero__user-block {
+
+.hero__socials__block {
+  width: 200px;
+  height: 34px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 25px;
+  left: 23px;
+  //border: 1px solid red;
+  //display: flex;
+  //justify-content: center;
 }
-*/
 
 .hero__title {
   @include centered(y);

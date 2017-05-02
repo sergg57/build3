@@ -1,0 +1,91 @@
+//-Created by serg on 30.04.17.
+-var temas=['Frontend','Backend','WorkFlow']
+
+-
+    var Frontend=[
+        {
+            instrument: 'HTML5',
+            prop: '65'
+        },
+        {   instrument: 'CSS3',
+            prop: '55'
+        },
+        {
+            instrument: 'JQERY',
+            prop: '15'
+        }
+    ]
+-
+    var Backend=[
+        {
+            instrument: 'PHP',
+            prop: '5'
+        },
+        {
+            instrument: 'mySQL',
+            prop: '15'
+        },
+        {
+            instrument: 'node.js & npm',
+            prop: '25'
+        },
+        {
+            instrument: 'Mongo.db',
+            prop: '15'
+        }
+    ]
+-
+    var WorkFlow=[
+        {
+            instrument: 'Git',
+            prop: '35'
+        },
+        {
+            instrument: 'Gulp',
+            prop: '40'
+        },
+        {
+            instrument: 'Bower',
+            prop: '10'
+        }
+    ]
+ui.skills
+    each skill in temas
+        -console.log(skill)
+        li.skills_items
+            .skill-section
+                //-.skill-section__title=skill
+                +title(skill,'','skill-section__title', '24px')
+                //- -console.log('skill=',skill)
+                if skill=='Frontend'
+                    -var v1=Frontend
+                else if skill=='Backend'
+                    -var v1=Backend
+                else if skill=='WorkFlow'
+                    -var v1=WorkFlow
+                ul.skill-section__list
+                    //-Frontend
+                    each skillName in v1
+                        //-console.log(skillName)
+                        //- -console.log(skillName.prop)
+                        li.skill-section__item
+                            .skill
+                                svg(
+                                class ='skill__circles'
+                                viewbox='0 0 110 110'
+                                )
+                                    circle(
+                                    r="45" cx="50%" cy="50%"
+                                    fill="none"
+                                    class="circle__first"
+                                    )
+                                    circle(
+                                    r="45" cx="50%" cy="50%"
+                                    transform="rotate(-90 55 55)"
+                                    class="circle__second circle-"+`${skillName['prop']}`
+                                    )
+                                    .skill__name=skillName.instrument
+                                    //- -console.log(skillName.instrument)
+
+
+

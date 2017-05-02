@@ -1,28 +1,49 @@
 .about {
-  @extend %clearfix;
-  border: 1px solid red;
+  //@extend %clearfix;
+  display: flex;
+  flex-wrap: nowrap;
+
+  //border: 1px solid red;
 }
 
 .about__left, .about__right {
-  float: left;
-  width: 50%;
-  position: relative;
-  border: 1px solid black;
+  //float: left;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  flex: 1 1;
+  //width: 50%;
+  position: relative; /* позиционируют треугольники */
+  //border: 1px solid black;
+
+  //@include centered(y);
 }
 
+
 .about__left {
-  background: $beige1;
-  //background: $white;
+  //display: flex;
+  //flex-flow: row wrap;
+  //align-items: stretch; /* по умолчанию  */
+
+  //background: $beige1; /* для макета forest */
+  //align-self: flex-start;
+  background: $white;
 
 }
 
 .about__right {
-  background: $white1;
-  //background: $beige;
+  //background: $white1;  /* для макета forest */
+  background: $beige;
 }
 
 .about__triangles {
-  position: absolute;
+  position: absolute; /* позиционируют треугольники */
   bottom: 100%;
 }
-
+/*
+.about__left .about__section-title {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid maroon;
+}
+*/

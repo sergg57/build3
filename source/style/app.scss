@@ -6,6 +6,7 @@ $white1: #f4f5f0;
 $main-font-color: #373e42;
 $main-font-color1: #566358;
 $main-font-color2: #373e42;
+$main-font-color3: #455a64;
 
 //layout setups
 @import "layuot/setups";
@@ -15,3 +16,5 @@ $main-font-color2: #373e42;
 @import "helper/mixins";
 
 @import "block/**/*.*";
+//@import "block/social";
+//@import "block/hero";

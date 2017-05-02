@@ -1,0 +1,72 @@
+.skills {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  //flex-direction: row;
+  //justify-content:center ;
+  //position: absolute;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  //border: 1px solid green;
+}
+/*
+.skills_items {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  border: 1px solid black;
+} */
+
+.skill-section {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  //border: 1px solid black;
+
+}
+.skill-section .skill-section__title {
+  max-width: 330px;
+  //margin-top: -0px;
+  padding: 0px 20px;
+  //align-self: center;
+  font-family: "Roboto Medium";
+  text-transform: capitalize;
+  color: $main-font-color3;
+  &:after, &:before {
+    width: 0px;
+  }
+}
+
+.skill-section__list{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  //border: 1px solid green;
+
+}
+// Задаем размер и положение - skills - кругов
+
+.skill-section__item {
+  display: inline-block;
+  //border: 1px solid red;
+  width: 120px;
+  height: 120px;
+  margin: 13px 30px;
+}
+
+/*
+.skill-section__item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  //display: inline-block;
+  border: 1px solid red;
+  width: 120px;
+  height: 120px;
+  margin: 40px 10px;
+}
+*/
