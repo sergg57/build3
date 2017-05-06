@@ -1,0 +1,49 @@
+.block-welcome{
+	width: 380px;
+	height: 395px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); /* центрирование самого блока */
+    text-align: center; /* цетрирование внутренних элементов   */
+    color: black;
+    //background-image: url(../img/bd/welcome_user_bd.png);
+    background-color: rgba(#fcfcfc, 0.5);
+	//border: 1px solid magenta;
+}
+
+.block-welcome__user-block {
+	text-align: center;
+    //border: 1px solid black;
+}
+
+.welcome-user__photo {
+	width: 147px;
+	height: 147px;
+	border-radius: 50%;
+	margin-top: 37px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.welcome-user__photo-avatar {
+	display: block;
+	max-width: 100%;
+}
+
+.welcome-user__name {
+    $main-font-color1: #566358;
+	//margin-bottom: 10px;
+	color: rgba(#000000, 0.7);
+    //color: $main-font-color1;
+	font-size: 30px;
+}
+
+.welcome-user__desc {
+    font-size: 16px;
+    //color: $main-font-color1;
+    color: rgba(#000000, 0.5);
+	font-weight: 100;
+	//color: #000000;
+}
+

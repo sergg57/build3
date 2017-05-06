@@ -1,0 +1,38 @@
+//-Created by serg on 06.05.17.
+
+block content
+     form(action='').autoriz-block
+        .autoriz-block__title
+            +title('Авторизуйтесь','' , 'autoriz-block__title', '30px')
+        .autoriz-block__login
+            input.autoriz-block__login-inpt(type="text", name='login' value='логин')
+        .autoriz-block__password
+            input.autoriz-block__password-inpt(type="password", name='password' value='пароль')
+        .autoriz-block__checkbox
+            img(src="./assets/img/icons/checkbox.png",  alt="checkbox_img").autoriz-block__checkbox-img
+            span.autoriz-block__checkbox-on
+                input.autoriz-block__checkbox-inpt(type="checkbox", name='checkbox' value='on')
+            p.autoriz-block__checkbox-text Я человек
+                //_input.autoriz-block__checkbox-inpt(type="checkbox", name='checkbox' value='on')
+                //-| Я человек
+        .autoriz-block__test
+            p.autoriz-block__test-text Вы точно не робот?
+
+        .autoriz-block__radiobtn
+            .radiobtn__item1
+                input.item__radiobtn-yes(type="radio", name='radio' value='yes' checked)
+                span.radiobtn__yes-img1
+                span.radiobtn__yes-img2
+                span.radiobtn__yes-text Да
+            .radiobtn__item2
+                input.item__radiobtn-no(type="radio", name='radio' value='no')
+                span.radiobtn__no-img1
+                span.radiobtn__no-text Не уверен
+
+        .avtoriz__navbar
+            ul.navbar-menu
+                li.navbar-menu__item
+                    a(href="page1.html?") На главную
+                li.navbar-menu__item
+                    a(href="") Войти
+
