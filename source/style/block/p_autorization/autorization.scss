@@ -1,0 +1,68 @@
+.autoriz-wraper {
+  // Настройки wrapper - основной "обертки"
+    //display: flex;
+	//min-height: 100vh;
+    //max-height: 900px;
+	height: 900px;
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	max-width: 1800px;
+   // border: 1px solid red;
+}
+
+// блочное прибитие футера
+
+.autoriz-footer {
+	  //display: flex;
+	  //flex-flow: column nowrap;
+	  //align-items: stretch;
+	font-size: 16px;
+	height: 63px;
+	margin-top: -63px;
+	position: relative;
+	text-align: center;
+	color: #ffffff;
+	//border: 1px solid maroon;
+   //background-color: rgba(#555b5e, 0.8);
+}
+
+.autoriz__button{
+	width: 180px;
+	height: 45px;
+	position: absolute;
+	top: 100px;
+	right: 100px;
+	//border: 1px solid white;
+}
+
+.autoriz__button-text{
+	width: 180px;
+	height: 45px;
+	font-size: 16px;
+	color: #ffffff;
+	border-radius: 5px;
+	background-color: transparent;
+	border: 1px solid white;
+
+}
+
+.autoriz__button-flip{
+	width: 180px;
+	height: 45px;
+	position: absolute;
+	top: 23px;
+	right: 100px;
+	//border: 1px solid white;
+}
+
+.button-flip__text{
+	width: 180px;
+	height: 45px;
+	font-size: 16px;
+	color: #ffffff;
+	border-radius: 5px;
+	background-color: transparent;
+	border: 1px solid white;
+
+}

@@ -1,0 +1,38 @@
+//--Created by serg on 03.05.17.
+
+extends ../layout/main.layuot.pug
+
+
+block content
+    //include ../common/heder
+    section.autoriz-wraper
+
+        .autoriz__bg
+            img(src="assets/img/bd/portfolio_3.jpg", alt="").autoriz__bg-img
+
+        .flip-container#flip-toggle
+            .flipper
+                .front
+                    include ../common/block_welcom
+                    //p Это первая сторона
+                .back
+                    include ../common/form_autorization
+                    //p А это вторая сторона
+
+
+
+        //-.autoriz__button
+            form(action='page1.html').autoriz__button-form
+                button(type='submit').autoriz__button-text Авторизоваться
+        .autoriz__button-flip
+            //-button(type='submit').button-flip__text Авторизоваться через переворот
+            button(onclick="document.querySelector('#flip-toggle').classList.toggle('hover')").button-flip__text Авторизоваться
+
+
+    footer.autoriz-footer
+        .autoriz-footer__text
+            //.footer-copyright__customer
+            p.footer-copyright__customer-text © Сергей Гришин | Создано с любовью в LoftSchool | 2017
+
+
+

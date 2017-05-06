@@ -1,0 +1,23 @@
+//-Created by serg on 06.05.17.
+
+block content
+    .block-welcome
+        //- front
+        .block-welcome__user-block
+            .welcome-user__photo
+                .welcome-user__photo-avatar
+                    img(src="./assets/img/content/user0.png", style="width:100%", alt="Фото автора").user__photo-img
+                    //-img(src="./assets/img/content/user1.png", alt="").user__photo-img
+            .welcome-user__name Владимир Астахов
+            .welcome-user__desc Личный сайт веб-разработчика
+            .welcome__socials__block
+                include ../common/social_icons
+            .welcome__navbar
+                ul.navbar-menu
+                    li.navbar-menu__item
+                        a(href="") Мои работы
+                    li.navbar-menu__item
+                        a(href="page1.html?") Обо мне
+                    li.navbar-menu__item
+                        a(href="") Блог
+

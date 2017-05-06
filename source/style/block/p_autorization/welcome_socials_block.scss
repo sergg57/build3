@@ -1,0 +1,21 @@
+.welcome__socials__block {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 36px;
+  //border: 1px solid red;
+  height: 35px;
+}
+
+.welcome__socials__block .socials__link {
+  fill: #70d1c6;
+  //fill: #1f8d8a;
+}
+
+.welcome__socials__block .socials__link:hover {
+  fill: #00bfa5;
+  //fill: #6c9c5a;
+}
+.welcome__socials__block .socials__link:active {
+  fill: red;
+}

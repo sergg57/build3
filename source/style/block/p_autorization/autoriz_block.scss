@@ -1,0 +1,212 @@
+.autoriz-block{
+	width: 380px;
+	height: 395px;
+	position: absolute;
+	top: 50%;
+	left: 50%; //left: 75%;
+	transform: translate(-50%, -50%); /* центрирование самого блока */
+    text-align: center; /* цетрирование внутренних элементов   */
+    color: black;
+    //background-image: url(../img/bd/welcome_user_bd.png);
+    background-color: rgba(#fcfcfc, 0.5);
+	//border: 1px solid maroon;
+}
+
+/* Заголовок в блоке авторизации */
+.autoriz-block .autoriz-block__title{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  //border: 1px solid black;
+}
+
+.autoriz-block__login {
+    background-image: url(../img/icons/login_rect.png);
+    background-repeat: no-repeat;
+    height: 45px;
+    width: 345px;
+    margin-left: 20px;
+    margin-top: 30px;
+    //background-position: 4px;
+    //outline: none;
+    padding-left: 40px;
+    font-size: 16px;
+    position: relative;
+}
+.autoriz-block__login-inpt{
+    position: absolute;
+    left: 16px;
+    background-image: url(../img/icons/login.svg);
+    background-repeat: no-repeat;
+    background-position: 0px;
+    background-color: transparent;
+    outline: none;
+    padding-left: 40px;
+    height: 45px;
+    width: 322px;
+    border: none;
+    font-size: 16px;
+}
+
+.autoriz-block__password {
+    background-image: url(../img/icons/login_rect.png);
+    background-repeat: no-repeat;
+    height: 45px;
+    width: 345px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-left: 40px;
+    font-size: 16px;
+    position: relative;
+}
+.autoriz-block__password-inpt{
+    position: absolute;
+    left: 16px;
+    background-image: url(../img/icons/password.svg);
+    background-repeat: no-repeat;
+    background-position: 0px;
+    background-color: transparent;
+    outline: none;
+    padding-left: 40px;
+    height: 45px;
+    width: 322px;
+    border: none;
+    font-size: 16px;
+
+}
+.autoriz-block__checkbox{
+    position: relative;
+    height: 45px;
+    width: 345px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-left: 40px;
+    font-size: 16px;
+    //border: 1px solid red;
+}
+
+.autoriz-block__checkbox-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    transform: translate(-50%, -50%);
+    //border: 1px solid maroon;
+    //float: left;
+}
+
+.autoriz-block__checkbox-on{
+  position: absolute;
+  top: 15px;
+  left: 164px;
+  background-image: url(../img/icons/check.svg);
+  height: 15px;
+  width: 18px;
+  //border: 1px solid green;
+}
+.autoriz-block__checkbox-text{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 55%;
+}
+.autoriz-block__checkbox-inpt {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  display: none;
+  //background-image: url(../img/icons/password.svg);
+  //background-color: transparent;
+  //outline: none;
+}
+
+.autoriz-block__test {
+  //border: 1px solid red;
+}
+
+/* Радио кнопки */
+
+.autoriz-block__radiobtn {
+  display: flex;
+  margin-top: 10px;
+  height: 30px;
+  //border: 1px solid red;
+}
+/* Скрываем реальный radiobox  */
+.item__radiobtn-yes, .item__radiobtn-no{
+  display: none;
+}
+
+.radiobtn__item1{
+  width: 100px;
+  height: 30px;
+  margin-left: 84px;
+  //border: 1px solid blue;
+}
+
+.radiobtn__item2 {
+  width: 100px;
+  height: 30px;
+  margin-left: 0px;
+  //border: 1px solid yellow;
+}
+
+/* Задаем внешний вид кастомного чекбокса  */
+.radiobtn__yes-img1{
+  display: inline-block;
+  position: relative;
+  background-image: url(../img/icons/radio_1.png);
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  //border: 1px solid blue;
+}
+
+.item__radiobtn-yes:checked + .radiobtn__yes-img1::before{
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.radiobtn__yes-img2{
+  display: inline-block;
+  position: absolute;
+  top:  302px;
+  left: 116px;
+  background-image: url(../img/icons/radio_0.png);
+  opacity: 1;
+  width: 8px;
+  height: 8px;
+  vertical-align: middle;
+  //border: 1px solid blue;
+}
+
+/* Задаем внешний вид кастомного чекбокса  */
+.radiobtn__no-img1{
+  display: inline-block;
+  position: relative;
+  background-image: url(../img/icons/radio_2.png);
+  opacity: 0.3;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  //border: 1px solid blue;
+}
+
+.item__radiobtn-no:checked + .radiobtn__no-img1::before{
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.radiobtn__yes-text{
+  margin-left: 10px;
+  color: #068981;
+}
+.radiobtn__no-text {
+  margin-left: 10px;
+}
