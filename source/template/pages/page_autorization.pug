@@ -5,9 +5,12 @@ extends ../layout/main.layuot.pug
 
 block content
     //include ../common/heder
+    include ../common/preloader
     section.autoriz-wraper
 
-        .autoriz__bg
+        include ../common/parallax_autorization
+
+        //-.autoriz__bg
             img(src="assets/img/bd/portfolio_3.jpg", alt="").autoriz__bg-img
 
         .flip-container#flip-toggle

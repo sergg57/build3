@@ -1,0 +1,70 @@
+.wrapper-parallax {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+#parallax {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2162px;
+  margin: auto;
+}
+.parallax__layer {
+  position: relative;
+  left: 50%;
+  margin-left: -1500px;
+}
+
+.image-1{
+  position: absolute;
+  height: 2162px;
+  top:  0;
+  bottom: 0;
+  //border: 1px solid red;
+}
+.image-2{
+  position: absolute;
+  height: 2062px;
+  top:  100px;
+  bottom: 0;
+  //border: 1px solid red;
+}
+.image-3{
+  position: absolute;
+  height: 1995px;
+  top:  167px;
+  bottom: 0;
+  //border: 1px solid red;
+}
+.image-4{
+  position: absolute;
+  height: 2133px;
+  top:  29px;
+  bottom: 0;
+  //border: 1px solid red;
+}
+.image-5{
+  position: absolute;
+  height: 1867px;
+  top:  295px;
+  bottom: 0;
+  //border: 1px solid red;
+}
+.image-6{
+  position: absolute;
+  height: 1070px;
+  top:  1092px;
+  bottom: 0;
+  //border: 1px solid red;
+}
+
+.image-7{
+  position: absolute;
+  height: 1850px;
+  top:  312px;
+  bottom: 0;
+  //border: 1px solid red;
+}

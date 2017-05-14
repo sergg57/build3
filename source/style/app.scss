@@ -15,6 +15,10 @@ $main-font-color3: #455a64;
 //mixins
 @import "helper/mixins";
 
+//common -preloader
+@import "common/preloader";
+
+
 @import "block/**/*.*";
 //@import "block/social";
 //@import "block/hero";

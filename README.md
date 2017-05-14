@@ -17,6 +17,7 @@
 9. сверстал page-1-about в проекте - Mountains - первый вариант   
 10. Сверстал страницы - welcome и авторизацию и реализовал между ними flip = переворот
 и сохранил в третьей ветке - task3
+11. Сверстал -preloader+parallax_scroll_page-about + parallax_mouse_page-welcome
 #### Для начала работы
 
 1. ```clone this repo```

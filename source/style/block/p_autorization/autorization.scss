@@ -1,13 +1,16 @@
+
 .autoriz-wraper {
   // Настройки wrapper - основной "обертки"
     //display: flex;
 	//min-height: 100vh;
     //max-height: 900px;
-	height: 900px;
+	//height: 900px;
+	height: 100vh;
 	position: relative;
 	overflow: hidden;
 	margin: 0 auto;
-	max-width: 1800px;
+	//max-width: 1800px;
+	width: 100%;
    // border: 1px solid red;
 }
 
