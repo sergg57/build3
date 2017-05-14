@@ -1,8 +1,9 @@
 .skill {
   position: relative;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: flex-start;
+  display: block;
+  //display: flex;
+  //flex-flow: column wrap;
+  //align-items: flex-start;
 }
 
 .skill__circles {
@@ -20,14 +21,20 @@
   transition: all 1s;
 }
 
-.skill__name {
+.skill__name-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  top: 45px;
-  left: 29px;
+  top: 39px;
+  left: 23px;
+  width: 75px;
+  height: 45px;
   font-family: "Roboto Medium";
   font-size: 14px;
   text-transform: uppercase;
   color:#10c1a8;
+  //border: 1px solid red;
 }
 
 /*
@@ -36,7 +43,7 @@
   //stroke-dasharray: 56.55 377;
 }
 */
-.skill__circles:hover .circle-0 {
+.skill:hover .circle-0 {
    stroke-dasharray: .001 282.6;
 }
 .skill__circles:hover .circle-5 {
@@ -46,57 +53,57 @@
 .skill__circles:hover .circle-10 {
    stroke-dasharray: 28.26 282.6;
 }
-.skill__circles:hover .circle-15 {
+.skill:hover .circle-15 {
    stroke-dasharray: 42.39 282.6;
 }
-.skill__circles:hover .circle-20 {
+.skill:hover .circle-20 {
    stroke-dasharray: 56.52 282.6;
 }
-.skill__circles:hover .circle-25 {
+.skill:hover .circle-25 {
    stroke-dasharray: 70.65 282.6;
 }
-.skill__circles:hover .circle-30 {
+.skill:hover .circle-30 {
    stroke-dasharray: 84.78 282.6;
 }
-.skill__circles:hover .circle-35 {
+.skill:hover .circle-35 {
    stroke-dasharray: 98.91 282.6;
 }
-.skill__circles:hover .circle-40 {
+.skill:hover .circle-40 {
    stroke-dasharray: 113.04 282.6;
 }
-.skill__circles:hover .circle-45 {
+.skill:hover .circle-45 {
    stroke-dasharray: 127.17 282.6;
 }
-.skill__circles:hover .circle-50 {
+.skill:hover .circle-50 {
    stroke-dasharray: 141.3 282.6;
 }
-.skill__circles:hover .circle-55 {
+.skill:hover .circle-55 {
    stroke-dasharray: 155.43 282.6;
 }
-.skill__circles:hover .circle-60 {
+.skill:hover .circle-60 {
    stroke-dasharray: 169.56 282.6;
 }
-.skill__circles:hover .circle-65 {
+.skill:hover .circle-65 {
    stroke-dasharray: 183.69 282.6;
 }
-.skill__circles:hover .circle-70 {
+.skill:hover .circle-70 {
    stroke-dasharray: 197.82 282.6;
 }
-.skill__circles:hover .circle-75 {
+.skill:hover .circle-75 {
    stroke-dasharray: 211.95 282.6;
 }
-.skill__circles:hover .circle-80 {
+.skill:hover .circle-80 {
    stroke-dasharray: 226.08 282.6;
 }
-.skill__circles:hover .circle-85 {
+.skill:hover .circle-85 {
    stroke-dasharray: 240.21 282.6;
 }
-.skill__circles:hover .circle-90 {
+.skill:hover .circle-90 {
    stroke-dasharray: 254.34 282.6;
 }
-.skill__circles:hover .circle-95 {
+.skill:hover .circle-95 {
    stroke-dasharray: 268.47 282.6;
 }
-.skill__circles:hover .circle-100 {
+.skill:hover .circle-100 {
    stroke-dasharray: 282.6 282.6;
 }
