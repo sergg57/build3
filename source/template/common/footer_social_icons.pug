@@ -3,12 +3,14 @@
 -
     var obj = [
     {
+    a: 'https://vk.com/sergg57',
     icon: "vk_round_alfa",
     //-vbox: "-5 -5 40.01 27.12"
     // viewBox:"0 0 30.011 17.123"
     viewBox:"0 0 50 50"
     },
     {
+    a: 'https://github.com/sergg57/build3',
     icon: 'github_round_alfa',
     //-vbox: "-5 -5 36 32"
     //-viewBox:"0 0 50 50"
@@ -16,6 +18,7 @@
     viewBox:"0 0 50 50"
     },
     {
+    a: 'https://github.com/sergg57/build3',
     icon: "in_round_alfa",
     //-vbox: "-5 -5 34 32.94"
     //viewBox:"0 0 24 22.938"
@@ -26,7 +29,7 @@ ul.socials
     each item in obj
         //-- console.log(item)
         li.socials__item
-            a(href='#' class=`footer-socials__link`)
+            a(href=`${item['a']}` class=`footer-socials__link`)
                 svg(class=`socials__link_${item['icon']}` viewBox=`${item['viewBox']} `)
                     use(xlink:href=`./assets/img/sprite.svg#${item['icon']}`)
 

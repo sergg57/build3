@@ -1,0 +1,44 @@
+//-
+   Created by serg on 17.05.17.
+        //-block content
+            .full-screen-menu
+                .f-s-m-contaner
+                    ul.full-screen-menu__spisok
+                        li.full-screen-menu__item Мои работы
+                        li.full-screen-menu__item Блог
+                        li.full-screen-menu__item Обо мне
+                        li.full-screen-menu__item Авторизация
+
+
+
+
+
+-
+    var obj = [
+        {
+            a: '#',
+            menu: 'Мои работы'
+           //viewBox:"5 0 36.011 32.123"
+        },
+        {
+            a: '#',
+            menu: 'Блог'
+        },
+        {
+            a: 'page1.html',
+            menu: 'Обо мне'
+        },
+        {
+        a: 'index.html',
+        menu: 'Авторизация'
+        }
+    ]
+
+.full-screen-menu
+        .f-s-m-contaner
+            ul.full-screen-menu__spisok
+                each item in obj
+                    //- -var textmenu = item.menu;
+
+                    li.full-screen-menu__item
+                        a(href=`${item['a']}` class=`menu-item__link`) #{item.menu}

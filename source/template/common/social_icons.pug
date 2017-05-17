@@ -3,22 +3,18 @@
 -
     var obj = [
         {
+            a: 'https://vk.com/sergg57',
             icon: 'vk',
-            //-vbox: "-5 -5 40.01 27.12"
-           // viewBox:"0 0 30.011 17.123"
             viewBox:"5 0 36.011 32.123"
         },
         {
+            a: 'https://github.com/sergg57/build3',
             icon: 'github',
-            //-vbox: "-5 -5 36 32"
-            //-viewBox:"0 0 50 50"
-            //viewBox:"0 0 26 22"
             viewBox:"0 0 34 32"
         },
         {
+            a: 'https://github.com/sergg57/build3',
             icon: 'in',
-            //-vbox: "-5 -5 34 32.94"
-            //viewBox:"0 0 24 22.938"
             viewBox:"0 4 34 32.94"
         }
     ]
@@ -26,7 +22,7 @@ ul.socials
     each item in obj
         //-- console.log(item)
         li.socials__item
-            a(href='#' class=`socials__link`)
+            a(href=`${item['a']}` class=`socials__link`)
                 svg(class=`socials__link_${item['icon']}` viewBox=`${item['viewBox']} `)
                     use(xlink:href=`./assets/img/sprite/sprite.svg#${item['icon']}`)
 
