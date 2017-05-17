@@ -2,7 +2,9 @@ extends ../layout/main.layuot.pug
 
 
 block content
+    include ../pages/full_screen_menu
     include ../common/heder
+
 
     section.section.about
         .about__left
@@ -26,14 +28,15 @@ block content
                 .user-about__picture
                     //-img(src="./assets/img/content/my_about.jpg", alt="").about__photo
                     img(src="./assets/img/content/about.jpg", alt="").about__photo
+                    //img(src="./assets/img/content/my_about_1.jpg", alt="").about__photo
                 //.user-about__title
                 +title('Кто Я','' , 'user-about__title', '30px')
                     //-.subtitle
                         | Кто Я
                 .user-about__text
                     // Здесь будет редактор WISYWUG, поэтому стиле будет задавать он но свои надо задачть в начале этого файла
-                    p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
-                    p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+                    p Я веб разработчик из Москвы. Мне 59 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                    p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
 
 
         .about__right

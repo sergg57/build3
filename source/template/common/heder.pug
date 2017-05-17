@@ -1,6 +1,6 @@
 section.section.hero
         .hero__bg
-            img(src="assets/img/bd/portfolio_3.jpg", alt="").hero__bg-img
+            //img(src="assets/img/bd/portfolio_3.jpg", alt="").hero__bg-img
             //-img(src="./assets/img/bd/portfolio_m.jpg", alt="").hero__bg-img
 
         .hero__title
@@ -11,14 +11,17 @@ section.section.hero
                     .user__photo-avatar
                         img(src="./assets/img/content/user0.png", style="width:100%", alt="Фото автора").user__photo-img
                         //-img(src="./assets/img/content/user1.png", alt="").user__photo-img
-                .user__name Владимир Астахов
+                .user__name Сергей Гришин
                 .user__desc Личный сайт веб-разработчика
 
         .hero__socials-block
             include ../common/social_icons
 
-        a(href="").hamburger
-            img(src="./assets/img/icons/hamburger.svg", alt="").hamburger__icon
+        a(href="#").hamburger#hamburger
+            //-img(src="./assets/img/icons/hamburger.svg", alt="").hamburger__icon
+            span.hamburger__line
+            span.hamburger__line
+            span.hamburger__line
 
 
 

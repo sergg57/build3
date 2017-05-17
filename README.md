@@ -19,7 +19,10 @@
 и сохранил в третьей ветке - task3
 11. Сверстал -preloader+parallax_scroll_page-about + parallax_mouse_page-welcome
 #### Для начала работы
+12. Доработал стриницу - page1 -about - сверстал и написал JScript для гамбургера,
+ сверстал полноэкранное меню (full_screen-menu), добавил ссылки в соц.иконки
 
+ 
 1. ```clone this repo```
 2. ```cd path/to/...```
 3. ```npm install gulpjs/gulp-cli -g```  
