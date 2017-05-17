@@ -21,13 +21,68 @@
   justify-content: center;
   align-items: center;
 }
+.full-screen-menu__spisok {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px;
+
+}
+
 .full-screen-menu__item {
   margin-top: 50px;
+  //position: relative;
 }
+
 
 .menu-item__link {
   text-decoration: none;
   @include bernier(normal);
   color: $white;
   font-size: 45px;
+  position: relative;
+  display: flex;
+
+  //$margin: 40px;
+
+ /*&:after, &:before {
+    content: "";
+    //display: block;
+    display: flex;
+    @include centered(y);
+    //background: rgba($main-font-color1, .5);
+    background: rgba($white, .2);
+    width: 22px;
+    height: 5px;
+  }
+
+ &:after {
+   right: 20px; //$margin;
+ }
+ &:before {
+    left: 20px; // $margin;
+ }
+*/
+
+}
+
+.menu-item__link:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  background: rgba($white, 0.8);
+  left: -40px;
+  width: 22px;
+  height: 5px;
+}
+
+.menu-item__link:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  background: rgba($white, 0.8);
+  width: 22px;
+  height: 5px;
 }
