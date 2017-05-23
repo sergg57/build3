@@ -1,0 +1,75 @@
+//-   Created by serg on 18.05.17.
+
+extends ../layout/main.layuot.pug
+
+block content
+    //-include ../common/preloader
+    include ../pages/full_screen_menu
+    section.works-wraper
+        .section.heder
+            include ../common/heder
+            include ../common/block_triangle
+
+        .section.works-title
+            +title('Мои работы', 'works-header.png', 'work-title', '63px')
+
+        .section.myworks
+            .myworks__left
+                .myworks__desc
+                    .desc__title
+                        +title('Сайт школы онлайн','' , 'desc__title-1', '34px')
+                        +title('образование','' , 'desc__title-2', '34px')
+                    .desc__shape-1
+                        img(src="./assets/img/bd/Shape_1.png", alt="").desc__shape-1-image
+                    .desc__text
+                        p HTML, CSS, JAVASCRIPT
+                    .desc__shape-2
+                        img(src="./assets/img/bd/Shape_1.png", alt="").desc__shape-2-image
+                    a(href='index.html').desc__button
+                        svg(class='link-icon')
+                            use(xlink : href='./assets/img/sprite.svg#link')
+                        span.desc__button-text Посмотреть сайт
+
+
+            .myworks__right.slider__display
+                img(src="./assets/img/content/work-1.png" alt="").slider__display-pic
+
+            .myworks__right.slider__buttons
+                .slider__button-left
+                    ul.button__list-left
+                        li.button__item-left
+                            //a(href='').slider__btns-left
+                            img(src="./assets/img/content/work-4.png" alt="").left__pic
+                    .button__shodow-left
+                    .button__arrow-left
+                        a(href='#').slider__btns-left
+                            svg(class='barrow-douwn')
+                                use(xlink : href='./assets/img/sprite.svg#arrow_down')
+
+
+
+                .slider__button-right
+                    ul.button__list-right
+                        li.button__item-right
+                            //a(href='').slider__btns-right
+                            img(src="./assets/img/content/work-2.png" alt="").right__pic
+
+                    .button__shodow-right
+                    .button__arrow-right
+                        a(href='#').slider__btns-right
+                            svg(class='barrow-up')
+                                use(xlink : href='./assets/img/sprite.svg#arrow_up')
+
+
+                    //a(href='').slider__btns-right
+                        img(src="./assets/img/content/work-2.png" alt="").right__pic
+
+
+
+
+        .section.feedback
+
+
+
+
+    include ../common/footer

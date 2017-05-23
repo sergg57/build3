@@ -1,0 +1,66 @@
+.works-wraper {
+    width: 100%;
+    //height: 100vh;
+    height: 2816px;
+    background-color: #ffffff;
+    //border: 1px solid red;
+}
+.heder {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    //border: 1px solid black;
+}
+
+.heder .hero {
+    height: 700px;
+    //border: 1px solid yellow;
+}
+
+.heder .triangle__left {
+    top: inherit;
+    bottom: 0;
+    fill: #faf8f0;
+}
+.heder .triangle__right{
+    top: inherit;
+    bottom: 0;
+    fill: #faf8f0;
+}
+.works-title {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    justify-content: center;
+    max-height: 190px;
+    max-width: 100%;
+    flex: 1 1 380px;
+    background-color:  #faf8f0;
+    //border: 1px solid green;
+}
+/*.works-title .title {
+    //justify-content: center;
+}
+*/
+
+/* ---- Слайдер ---- */
+.myworks {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 650px;
+    height: 100vh;
+    //background-color:  #f0efe9;
+    //border: 1px solid blue;
+    @include tablets {
+    flex-wrap: nowrap;
+    height: auto;
+  }
+}
+
+.feedback {
+    width: 100%;
+    height: 1295px;
+    //border: 1px solid magenta;
+}

@@ -1,0 +1,35 @@
+
+.box{
+    //margin: 50px auto;
+    //border: 1px solid red;
+    //position: relative;
+}
+
+.triangle__left {
+    //fill: #faf8f0;
+    fill: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+}
+
+.triangle__right {
+    //fill: #faf8f0;
+    fill: green;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 50%;
+}
+/*
+
+.triangle2__left {
+    fill: green;
+}
+
+.triangle2__right {
+    fill: red;
+}
+*/
