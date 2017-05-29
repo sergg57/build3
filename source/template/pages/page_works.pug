@@ -1,9 +1,10 @@
-//-   Created by serg on 18.05.17.
+//- Created by serg on 18.05.17.
 
 extends ../layout/main.layuot.pug
-
+block title
+    title WORKS
 block content
-    //-include ../common/preloader
+    include ../common/preloader
     include ../pages/full_screen_menu
     section.works-wraper
         .section.heder
@@ -13,63 +14,78 @@ block content
         .section.works-title
             +title('Мои работы', 'works-header.png', 'work-title', '63px')
 
-        .section.myworks
-            .myworks__left
-                .myworks__desc
-                    .desc__title
-                        +title('Сайт школы онлайн','' , 'desc__title-1', '34px')
-                        +title('образование','' , 'desc__title-2', '34px')
-                    .desc__shape-1
-                        img(src="./assets/img/bd/Shape_1.png", alt="").desc__shape-1-image
-                    .desc__text
-                        p HTML, CSS, JAVASCRIPT
-                    .desc__shape-2
-                        img(src="./assets/img/bd/Shape_1.png", alt="").desc__shape-2-image
-                    a(href='index.html').desc__button
-                        svg(class='link-icon')
-                            use(xlink : href='./assets/img/sprite.svg#link')
-                        span.desc__button-text Посмотреть сайт
-
-
-            .myworks__right.slider__display
-                img(src="./assets/img/content/work-1.png" alt="").slider__display-pic
-
-            .myworks__right.slider__buttons
-                .slider__button-left
-                    ul.button__list-left
-                        li.button__item-left
-                            //a(href='').slider__btns-left
-                            img(src="./assets/img/content/work-4.png" alt="").left__pic
-                    .button__shodow-left
-                    .button__arrow-left
-                        a(href='#').slider__btns-left
-                            svg(class='barrow-douwn')
-                                use(xlink : href='./assets/img/sprite.svg#arrow_down')
-
-
-
-                .slider__button-right
-                    ul.button__list-right
-                        li.button__item-right
-                            //a(href='').slider__btns-right
-                            img(src="./assets/img/content/work-2.png" alt="").right__pic
-
-                    .button__shodow-right
-                    .button__arrow-right
-                        a(href='#').slider__btns-right
-                            svg(class='barrow-up')
-                                use(xlink : href='./assets/img/sprite.svg#arrow_up')
-
-
-                    //a(href='').slider__btns-right
-                        img(src="./assets/img/content/work-2.png" alt="").right__pic
-
-
-
+        include ../common/works_myworks
 
         .section.feedback
+            //- фон задан через стиль CSS - background-image
+            //-.feedback__bg
+                //-img(src="./assets/img/bd/feedback_bg.png", alt="").hero__bg-img
+                //-img(src="./assets/img/bd/reviews.jpg", alt="").feedback__bg-img
+
+            .feedback-about__title
+                +title('Что обо мне говорят', 'about_header-2.png', 'feedback-about__title-1', '54px')
+                //+title('говорят', '', 'feedback-about__title-2', '54px')
+            .feedback__block
+                .feedback__block-left
+                    .feedback__quote
+                        img(src="./assets/img/decor/quote.png", alt="").feedback__quote-pic1
+                        //-svg(class='link-icon')
+                            use(xlink : href='./assets/img/sprite.svg#link')
+                    .feedback__text
+                        span(class='discript1') Этот парень проходил обучение веб-разработке не где-то, а в LofSchool ! А это 2 месяца только самых тяжёлых испытаний и бессонных ночей!
+                    .feedback__user
+                        .feedback__user-photo
+                            img(src="./assets/img/decor/photo-1.png", alt="").feedback__quote-pic1
+
+                        .feedback__user-text
+                            .feedback__user-name
+                                p Ковальчук Дмитрий
+                            .feedback__user-profession
+                                p основатель Loftschool
+
+                .feedback__block-right
+                    .feedback__quote
+                        img(src="./assets/img/decor/quote.png", alt="").feedback__quote-pic2
+
+                    .feedback__text
+                        span(class='discript2') Этот код выдержит любые испытания. Только пожалуйста, не загружайте сайт на слишком старых браузерах.
+                    .feedback__user
+                        .feedback__user-photo
+                            img(src="./assets/img/decor/photo-2.png", alt="").feedback__quote-pic1
+
+                        .feedback__user-text
+                            .feedback__user-name
+                                p Сабанцев Владимир
+                            .feedback__user-profession
+                                p предприниматель
 
 
+
+
+
+
+
+
+
+
+
+            .feedback-form__wrap
+                .feedback-form__blur
+                .feedback-form__wraper
+                    form(action='').feedback__form
+                        +title('Связаться со мной','' , 'form__title', '30px')
+                        .form__inputs
+                            input(type='text', name='name', required placeholder='Имя').inputs__name
+                            input(type='text', name='email', required placeholder='Email').inputs__email
+                            textarea(name='massage', required placeholder='Ваше сообщение').inputs__massage
+
+                        .form__btns
+                            button(type='submit').form__btn-sub Отправить
+                            button(type='reset').form__btn-reset Очистить
+            .feedback__button
+                a(href='#').button__arrow-up
+                    svg(class='arrow-up')
+                        use(xlink : href='./assets/img/sprite.svg#arrow_down')
 
 
     include ../common/footer
