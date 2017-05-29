@@ -6,6 +6,10 @@
   margin-top: -148px;
   position: relative;
   background-color: rgba(#555b5e, 0.8);
+  @include tablets {
+    height: 296px;
+    //margin-top: -296px;
+  }
 }
 
 .footer-content{
@@ -16,24 +20,30 @@
 
 .footer-navbar {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   //align-items: center;
 }
 .navbar-menu {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   //flex: 1;
   height: 78px;
   width: 470px;
   align-items: center;
   justify-content: space-around;
+  @include tablets {
+
+        //flex-flow: column nowrap;
+  }
   //list-style-type: none;
   //text-decoration: none;
   //border: 1px solid red;
+
 }
 
 .footer-social{
-  flex:1;
+  //flex:1;
+  flex: 1 1 200px;
   //border: 1px solid springgreen;
 }
 
