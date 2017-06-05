@@ -66,6 +66,9 @@
   position: absolute;
   top:  41%;
   left: 71%;
+  @include tablets {
+    display: none;
+  }
 }
 .marker__icon{
   height: 38px;

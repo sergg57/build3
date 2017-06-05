@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/foundation.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="">
+    <title>BLOG</title>
+    <style>
+      .user-about__text p {
+          margin-bottom: 25px;
+      }
+      .user-about__text ul{
+          list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="preloader">
+        <div class="preloader__spinner">
+          <div class="preloader__animation"></div>
+          <div class="preloader__percents">0%</div>
+        </div>
+      </div>
+      <div class="full-screen-menu">
+        <div class="f-s-m-contaner">
+          <ul class="full-screen-menu__spisok">
+            <li class="full-screen-menu__item"><a class="menu-item__link" href="page_works.html"> Мои работы</a></li>
+            <li class="full-screen-menu__item"><a class="menu-item__link" href="page_blog.html"> Блог</a></li>
+            <li class="full-screen-menu__item"><a class="menu-item__link" href="page1.html"> Обо мне</a></li>
+            <li class="full-screen-menu__item"><a class="menu-item__link" href="index.html"> Авторизация</a></li>
+          </ul>
+        </div>
+      </div>
+      <section class="blog-wraper">
+        <div class="section heder-blog">
+          <section class="section hero-blog">
+            <div class="hero-blog__bg"></div>
+            <div class="user hero-blog__user-block">
+              <div class="user__photo">
+                <div class="user__photo-avatar"><img class="user__photo-img" src="./assets/img/content/Avatar_1.png" style="width:100%;" alt="Фото автора"></div>
+              </div>
+              <div class="user-blog__title">
+                <div class="title user-blog__title" style="background-image: url('./assets/img/decor/blog_header.png');font-size:63px;">Блог</div>
+              </div>
+              <div class="user-blog__desc">Статьи, которые я написал</div>
+            </div>
+            <div class="hero__socials-block">
+              <ul class="socials">
+                <li class="socials__item"><a class="socials__link" href="https://vk.com/sergg57">
+                    <svg class="socials__link_vk" viewBox="5 0 36.011 32.123 ">
+                      <use xlink:href="./assets/img/sprite/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href="https://github.com/sergg57/build3">
+                    <svg class="socials__link_github" viewBox="0 0 34 32 ">
+                      <use xlink:href="./assets/img/sprite/sprite.svg#github"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href="https://github.com/sergg57/build3">
+                    <svg class="socials__link_in" viewBox="0 4 34 32.94 ">
+                      <use xlink:href="./assets/img/sprite/sprite.svg#in"></use>
+                    </svg></a></li>
+              </ul>
+            </div><a class="hamburger" href="#" id="hamburger"><span class="hamburger__line"></span><span class="hamburger__line"></span><span class="hamburger__line"></span></a>
+          </section>
+          <div class="box">
+            <svg class="triangle__left" //-xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 100" preserveAspectRatio="none">
+              <polygon points="0,0 0,1000, 1000,100"></polygon>
+            </svg>
+            <svg class="triangle__right" viewbox="0 0 1000 100" preserveAspectRatio="none">
+              <polygon points="0,100 1000,100, 1000,0"></polygon>
+            </svg>
+          </div>
+          <div class="blog__arrow"><a class="blog__arrow-down" href="#">
+              <svg class="arrow-down">
+                <use xlink : href="./assets/img/sprite.svg#arrow_down"></use>
+              </svg></a></div>
+        </div>
+        <section class="blog">
+          <div class="blog__content">
+            <div class="blog__flag">
+              <svg class="circle" viewBox="40, 0, 60, 60" preserveAspectRatio="none">
+                <circle class="crcl" cx="30" cy="30" r="30" fill="#00bfa5"></circle>
+              </svg>
+            </div>
+            <div class="blog__content-left">
+              <ul class="blog__list">
+                <li class="list__item"><a class="item__link active" href="#article1">Самое важное в SASS</a></li>
+                <li class="list__item"><a class="item__link" href="#article2">Приёмы вёрстки, без которых не обходиться ни один сайт</a></li>
+                <li class="list__item"><a class="item__link" href="#article3">Самый необходимый набор Gulp плагинов</a></li>
+                <li class="list__item"><a class="item__link" href="#article4">Почему я выбрал Pag</a></li>
+              </ul>
+            </div>
+            <div class="blog__content-right">
+              <div class="blog__item" id="article1">
+                <h3 class="item__title">Самое важное в SASS</h3><span class="item__date">21 апреля 2017годя</span>
+                <div class="item__text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea nulla, est sed, animi voluptas, distinctio, culpa voluptatum repudiandae esse a omnis. Suscipit nesciunt ipsum quaerat soluta qui dignissimos incidunt.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea nulla, est sed, animi voluptas, distinctio, culpa voluptatum repudiandae esse a omnis. Suscipit nesciunt ipsum quaerat soluta qui dignissimos incidunt.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea nulla, est sed, animi voluptas, distinctio, culpa voluptatum repudiandae esse a omnis. Suscipit nesciunt ipsum quaerat soluta qui dignissimos incidunt.</p>
+                  <pre>1 вернет сумму второго аргумента и двойки в степеничислового выражения первого аргумента
+2 var g = (a, b) => {
+3    let m = Math.pow(2, parseInt(a));
+4    return b + m;
+}</pre>
+                </div>
+              </div>
+              <div class="blog__item" id="article2">
+                <h3 class="item__title">Приёмы вёрстки без которых не обходиться ни один сайт</h3><span class="item__date">11 ноября 2016годя</span>
+                <div class="item__text">
+                  <p>Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.</p>
+                  <p>Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.</p>
+                </div>
+              </div>
+              <div class="blog__item" id="article3">
+                <h3 class="item__title">Самый необходимый набор Gulp плагинов</h3><span class="item__date">01 ноября 2017годя</span>
+                <div class="item__text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea nulla, est sed, animi voluptas, distinctio, culpa voluptatum repudiandae esse a omnis. Suscipit nesciunt ipsum quaerat soluta qui dignissimos incidunt.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea nulla, est sed, animi voluptas, distinctio, culpa voluptatum repudiandae esse a omnis. Suscipit nesciunt ipsum quaerat soluta qui dignissimos incidunt.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea nulla, est sed, animi voluptas, distinctio, culpa voluptatum repudiandae esse a omnis. Suscipit nesciunt ipsum quaerat soluta qui dignissimos incidunt.</p>
+                </div>
+              </div>
+              <div class="blog__item" id="article4">
+                <h3 class="item__title">Почему я выбрал Pag</h3><span class="item__date">29 октября 2016годя</span>
+                <div class="item__text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea nulla, est sed, animi voluptas, distinctio, culpa voluptatum repudiandae esse a omnis. Suscipit nesciunt ipsum quaerat soluta qui dignissimos incidunt.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea nulla, est sed, animi voluptas, distinctio, culpa voluptatum repudiandae esse a omnis. Suscipit nesciunt ipsum quaerat soluta qui dignissimos incidunt.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea nulla, est sed, animi voluptas, distinctio, culpa voluptatum repudiandae esse a omnis. Suscipit nesciunt ipsum quaerat soluta qui dignissimos incidunt.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="footer">
+        <div class="footer-content">
+          <div class="footer-navbar">
+            <ul class="navbar-menu">
+              <li class="navbar-menu__item"><a href="page_works.html">Мои работы</a></li>
+              <li class="navbar-menu__item"><a href="page1.html">Обо мне</a></li>
+              <li class="navbar-menu__item"><a href="page_blog.html">Блог</a></li>
+              <li class="navbar-menu__item"><a href="index.html">Авторизация</a></li>
+            </ul>
+            <div class="footer-social">
+              <ul class="socials">
+                <li class="socials__item"><a class="footer-socials__link" href="https://vk.com/sergg57">
+                    <svg class="socials__link_vk_round_alfa" viewBox="0 0 50 50 ">
+                      <use xlink:href="./assets/img/sprite.svg#vk_round_alfa"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="footer-socials__link" href="https://github.com/sergg57/build3">
+                    <svg class="socials__link_github_round_alfa" viewBox="0 0 50 50 ">
+                      <use xlink:href="./assets/img/sprite.svg#github_round_alfa"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="footer-socials__link" href="https://github.com/sergg57/build3">
+                    <svg class="socials__link_in_round_alfa" viewBox="0 0 50 50 ">
+                      <use xlink:href="./assets/img/sprite.svg#in_round_alfa"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="footer-copyright__about">
+            <p class="footer-copyright__about-text">Я веб-разработчик из Москвы, и этот сайт я сделал в рамках</p>
+            <p class="footer-copyright__about-text">обучения в Школе онлайн образования LoftSchool.</p>
+          </div>
+          <div class="footer-copyright__customer">
+            <p class="footer-copyright__customer-text">© Сергей Гришин | Создано с любовью в LoftSchool | 2017</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="./js/jquery-3.2.1.js"></script>
+  <script src="./assets/js/app.js"></script>
+  <script></script>
+</html>

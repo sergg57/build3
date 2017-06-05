@@ -1,0 +1,163 @@
+.blog-wraper {
+    width: 100%;
+    //height: 100vh;
+    height: 1733px;
+    //height: 2900px;
+    background-color: #ffffff;
+    //border: 1px solid red;
+}
+.heder-blog {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    //border: 1px solid black;
+}
+
+
+.section .heder-blog {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    //border: 1px solid black;
+}
+/*
+.heder .hero {
+    height: 700px;
+    //border: 1px solid yellow;
+}
+*/
+
+.hero-blog {
+  //height: 100vh;
+  //min-height: 650px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-blog__bg{
+  position: absolute;
+  background-image: url(../img/bd/portfolio_3.jpg);
+  background-position: center center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1270px;
+
+}
+
+/*.hero-blog__title {
+  @include centered(y);
+  text-align: center;
+  width: 100%;
+}
+*/
+.hero-blog__user-block {
+  //@include centered(y);
+  //top: 50%;
+  //margin-top: -198px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  margin-top: 70px;
+  //border: 1px solid red;
+}
+/*
+.user-blog__title {
+   @include centered(y);
+  top: 50%;
+  //margin-top: -198px;
+  text-align: center;
+  //position: absolute;
+  width: 100%;
+}
+*/
+
+.user__photo {
+	width: 147px;
+	height: 147px;
+	border-radius: 50%;
+	margin-bottom: 25px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.user__photo-avatar {
+	display: block;
+	max-width: 100%;
+}
+
+.user-blog__title {
+	margin-top: -20px;
+	color: #ffffff;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+	//font-size: 35px;
+}
+.user-blog__title .title {
+    width: 300px;
+    &:before{
+        left: 60px;
+        background-color: #7da9b3;
+    }
+    &:after{
+        right: 70px;
+        background-color: #7da9b3;
+    }
+}
+.user-blog__title .title img {
+    width: 100px;
+}
+.user-blog__desc {
+    margin-top: -20px;
+	font-weight: 100;
+	color: #ffffff;
+    font-size: 22px;
+}
+
+.hero__socials-block {
+  width: 200px;
+  height: 34px;
+  position: absolute;
+  top: 25px;
+  left: 23px;
+  //border: 1px solid red;
+  //display: flex;
+  //justify-content: center;
+}
+.heder-blog .triangle__left {
+    top: inherit;
+    bottom: 0;
+    fill: #ffffff;
+}
+.heder-blog .triangle__right{
+    top: inherit;
+    bottom: 0;
+    fill: #ffffff;
+}
+
+.blog__arrow {
+    position: absolute;
+    bottom: 10px;
+    width: 30px;
+    left: calc(50% - 15px);
+
+}
+
+.blog__arrow-down .arrow-down {
+    //display: flex;
+    //flex-direction: column;
+    //justify-content: center;
+    //margin-left: 15px;
+    width: 26px;
+    height: 16px;
+    fill: #fff;
+    transform: rotate(0deg);
+}
+
+/*.blog__footer .footer {
+   margin-top: 0px;
+    width: 100%;
+} */
