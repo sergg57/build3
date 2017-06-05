@@ -1,0 +1,77 @@
+//- Created by serg on 31.05.17.
+
+extends ../layout/main.layuot.pug
+block title
+    title BLOG
+block content
+    include ../common/preloader
+    include ../pages/full_screen_menu
+    section.blog-wraper
+        .section.heder-blog
+            //- include ../common/heder
+            include ../common/heder_blog
+            include ../common/block_triangle
+                    .blog__arrow
+                        a(href='#').blog__arrow-down
+                            svg(class='arrow-down')
+                                use(xlink : href='./assets/img/sprite.svg#arrow_down')
+        section.blog
+            .blog__content
+                .blog__flag
+                    svg(
+                        viewBox='40, 0, 60, 60'
+                        preserveAspectRatio = "none"
+                        class="circle"
+                        )
+                        circle(cx='30' cy='30' r='30' fill='#00bfa5').crcl
+                .blog__content-left
+                    ul.blog__list
+                        li.list__item
+                            a(href="#article1").item__link.active Самое важное в SASS
+                        li.list__item
+                            a(href="#article2").item__link Приёмы вёрстки, без которых не обходиться ни один сайт
+                        li.list__item
+                            a(href="#article3").item__link Самый необходимый набор Gulp плагинов
+                        li.list__item
+                            a(href="#article4").item__link Почему я выбрал Pag
+
+                .blog__content-right
+                    .blog__item#article1
+                        h3.item__title Самое важное в SASS
+                        span.item__date 21 апреля 2017годя
+                        .item__text
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea nulla, est sed, animi voluptas, distinctio, culpa voluptatum repudiandae esse a omnis. Suscipit nesciunt ipsum quaerat soluta qui dignissimos incidunt.
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea nulla, est sed, animi voluptas, distinctio, culpa voluptatum repudiandae esse a omnis. Suscipit nesciunt ipsum quaerat soluta qui dignissimos incidunt.
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea nulla, est sed, animi voluptas, distinctio, culpa voluptatum repudiandae esse a omnis. Suscipit nesciunt ipsum quaerat soluta qui dignissimos incidunt.
+                            pre 1 вернет сумму второго аргумента и двойки в степени
+                                | числового выражения первого аргумента
+
+                                |2 var g = (a, b) => {
+                                |3    let m = Math.pow(2, parseInt(a));
+                                |4    return b + m;
+                                |}
+                    .blog__item#article2
+                        h3.item__title Приёмы вёрстки без которых не обходиться ни один сайт
+                        span.item__date 11 ноября 2016годя
+                        .item__text
+                            p Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
+                            p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+                    .blog__item#article3
+                        h3.item__title Самый необходимый набор Gulp плагинов
+                        span.item__date 01 ноября 2017годя
+                        .item__text
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea nulla, est sed, animi voluptas, distinctio, culpa voluptatum repudiandae esse a omnis. Suscipit nesciunt ipsum quaerat soluta qui dignissimos incidunt.
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea nulla, est sed, animi voluptas, distinctio, culpa voluptatum repudiandae esse a omnis. Suscipit nesciunt ipsum quaerat soluta qui dignissimos incidunt.
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea nulla, est sed, animi voluptas, distinctio, culpa voluptatum repudiandae esse a omnis. Suscipit nesciunt ipsum quaerat soluta qui dignissimos incidunt.
+                    .blog__item#article4
+                        h3.item__title Почему я выбрал Pag
+                        span.item__date 29 октября 2016годя
+                        .item__text
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea nulla, est sed, animi voluptas, distinctio, culpa voluptatum repudiandae esse a omnis. Suscipit nesciunt ipsum quaerat soluta qui dignissimos incidunt.
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea nulla, est sed, animi voluptas, distinctio, culpa voluptatum repudiandae esse a omnis. Suscipit nesciunt ipsum quaerat soluta qui dignissimos incidunt.
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ea nulla, est sed, animi voluptas, distinctio, culpa voluptatum repudiandae esse a omnis. Suscipit nesciunt ipsum quaerat soluta qui dignissimos incidunt.
+
+
+
+    //-section.blog__footer
+    include ../common/footer

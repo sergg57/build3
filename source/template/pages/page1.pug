@@ -5,12 +5,18 @@ block title
 block content
     include ../common/preloader
     include ../pages/full_screen_menu
-    include ../common/heder
+    .section.heder-about
+        include ../common/heder
+        include ../common/block_triangle
+                .about__arrow
+                    a(href='#').about__arrow-down
+                        svg(class='arrow-down')
+                            use(xlink : href='./assets/img/sprite.svg#arrow_down')
 
 
     section.section.about
         .about__left
-            svg(
+            //-svg(
                 viewbox ="0 0 1000 100"
                 preserveAspectRatio = "none"
                 class="triangle triangle_fill_white about__triangles"
@@ -28,9 +34,9 @@ block content
                     | Обо мне
             .user-about
                 .user-about__picture
-                    //-img(src="./assets/img/content/my_about.jpg", alt="").about__photo
-                    img(src="./assets/img/content/about.jpg", alt="").about__photo
-                    //img(src="./assets/img/content/my_about_1.jpg", alt="").about__photo
+                    img(src="./assets/img/content/MyFoto-1.jpg", alt="").about__photo
+                    //-img(src="./assets/img/content/about.jpg", alt="").about__photo
+                    //-img(src="./assets/img/content/my_about_1.jpg", alt="").about__photo
                 //.user-about__title
                 +title('Кто Я','' , 'user-about__title', '30px')
                     //-.subtitle
@@ -42,11 +48,11 @@ block content
 
 
         .about__right
-            svg(
-            viewbox ="0 0 1000 100"
-            preserveAspectRatio = "none"
-            class="triangle triangle_fill_beige about__triangles"
-            )
+            //-svg(
+                viewbox ="0 0 1000 100"
+                preserveAspectRatio = "none"
+                class="triangle triangle_fill_beige about__triangles"
+                )
                 polygon(points="0,100 1000,100, 1000,0")
             .about-data
                 .about-data__description.about-user-info

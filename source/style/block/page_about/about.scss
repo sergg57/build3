@@ -2,6 +2,7 @@
   //@extend %clearfix;
   display: flex;
   flex-wrap: nowrap;
+  flex-wrap: wrap;
 
   //border: 1px solid red;
 }
@@ -11,7 +12,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  flex: 1 1;
+  flex: 1 1 380px;
   //width: 50%;
   position: relative; /* позиционируют треугольники */
   //border: 1px solid black;
@@ -36,10 +37,12 @@
   background: $beige;
 }
 
+/*
 .about__triangles {
   position: absolute; /* позиционируют треугольники */
-  bottom: 100%;
-}
+  //bottom: 100%;
+//}
+
 /*
 .about__left .about__section-title {
   display: flex;

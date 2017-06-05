@@ -10,6 +10,10 @@ block content
         .section.heder
             include ../common/heder
             include ../common/block_triangle
+                .works__arrow
+                    a(href='#').works__arrow-down
+                        svg(class='arrow-down')
+                            use(xlink : href='./assets/img/sprite.svg#arrow_down')
 
         .section.works-title
             +title('Мои работы', 'works-header.png', 'work-title', '63px')

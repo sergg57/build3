@@ -31,55 +31,64 @@
         <div class="f-s-m-contaner">
           <ul class="full-screen-menu__spisok">
             <li class="full-screen-menu__item"><a class="menu-item__link" href="page_works.html"> Мои работы</a></li>
-            <li class="full-screen-menu__item"><a class="menu-item__link" href="block_triangle.html"> Блог</a></li>
+            <li class="full-screen-menu__item"><a class="menu-item__link" href="page_blog.html"> Блог</a></li>
             <li class="full-screen-menu__item"><a class="menu-item__link" href="page1.html"> Обо мне</a></li>
             <li class="full-screen-menu__item"><a class="menu-item__link" href="index.html"> Авторизация</a></li>
           </ul>
         </div>
       </div>
-      <section class="section hero">
-        <div class="hero__bg">
-          <!--img(src="assets/img/bd/portfolio_3.jpg", alt="").hero__bg-img-->
-        </div>
-        <div class="hero__title"><img class="section-title" src="./assets/img/decor/portfolio_header-3.png" alt="">
-          <div class="user hero__user-block">
-            <div class="user__photo">
-              <div class="user__photo-avatar"><img class="user__photo-img" src="./assets/img/content/user0.png" style="width:100%;" alt="Фото автора"></div>
-            </div>
-            <div class="user__name">Сергей Гришин</div>
-            <div class="user__desc">Личный сайт веб-разработчика</div>
+      <div class="section heder-about">
+        <section class="section hero">
+          <div class="hero__bg">
+            <!--img(src="assets/img/bd/portfolio_3.jpg", alt="").hero__bg-img-->
           </div>
-        </div>
-        <div class="hero__socials-block">
-          <ul class="socials">
-            <li class="socials__item"><a class="socials__link" href="https://vk.com/sergg57">
-                <svg class="socials__link_vk" viewBox="5 0 36.011 32.123 ">
-                  <use xlink:href="./assets/img/sprite/sprite.svg#vk"></use>
-                </svg></a></li>
-            <li class="socials__item"><a class="socials__link" href="https://github.com/sergg57/build3">
-                <svg class="socials__link_github" viewBox="0 0 34 32 ">
-                  <use xlink:href="./assets/img/sprite/sprite.svg#github"></use>
-                </svg></a></li>
-            <li class="socials__item"><a class="socials__link" href="https://github.com/sergg57/build3">
-                <svg class="socials__link_in" viewBox="0 4 34 32.94 ">
-                  <use xlink:href="./assets/img/sprite/sprite.svg#in"></use>
-                </svg></a></li>
-          </ul>
-        </div><a class="hamburger" href="#" id="hamburger"><span class="hamburger__line"></span><span class="hamburger__line"></span><span class="hamburger__line"></span></a>
-      </section>
-      <section class="section about">
-        <div class="about__left">
-          <svg class="triangle triangle_fill_white about__triangles" viewbox="0 0 1000 100" preserveAspectRatio="none">
+          <div class="hero__title"><img class="section-title" src="./assets/img/decor/portfolio_header-3.png" alt="">
+            <div class="user hero__user-block">
+              <div class="user__photo">
+                <div class="user__photo-avatar"><img class="user__photo-img" src="./assets/img/content/Avatar_1.png" style="width:100%;" alt="Фото автора"></div>
+              </div>
+              <div class="user__name">Сергей Гришин</div>
+              <div class="user__desc">Личный сайт веб-разработчика</div>
+            </div>
+          </div>
+          <div class="hero__socials-block">
+            <ul class="socials">
+              <li class="socials__item"><a class="socials__link" href="https://vk.com/sergg57">
+                  <svg class="socials__link_vk" viewBox="5 0 36.011 32.123 ">
+                    <use xlink:href="./assets/img/sprite/sprite.svg#vk"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a class="socials__link" href="https://github.com/sergg57/build3">
+                  <svg class="socials__link_github" viewBox="0 0 34 32 ">
+                    <use xlink:href="./assets/img/sprite/sprite.svg#github"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a class="socials__link" href="https://github.com/sergg57/build3">
+                  <svg class="socials__link_in" viewBox="0 4 34 32.94 ">
+                    <use xlink:href="./assets/img/sprite/sprite.svg#in"></use>
+                  </svg></a></li>
+            </ul>
+          </div><a class="hamburger" href="#" id="hamburger"><span class="hamburger__line"></span><span class="hamburger__line"></span><span class="hamburger__line"></span></a>
+        </section>
+        <div class="box">
+          <svg class="triangle__left" //-xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 100" preserveAspectRatio="none">
             <polygon points="0,0 0,1000, 1000,100"></polygon>
           </svg>
+          <svg class="triangle__right" viewbox="0 0 1000 100" preserveAspectRatio="none">
+            <polygon points="0,100 1000,100, 1000,0"></polygon>
+          </svg>
+        </div>
+        <div class="about__arrow"><a class="about__arrow-down" href="#">
+            <svg class="arrow-down">
+              <use xlink : href="./assets/img/sprite.svg#arrow_down"></use>
+            </svg></a></div>
+      </div>
+      <section class="section about">
+        <div class="about__left">
           <div class="about__section-title">
             <div class="title about__section-title" style="background-image: url('./assets/img/decor/about-header.png');font-size:63px;">Обо мне</div>
             <!--.title(style="background-image: url('img/decor/about-heder.png')").about__section-title-->
           </div>
           <div class="user-about">
-            <div class="user-about__picture"><img class="about__photo" src="./assets/img/content/about.jpg" alt="">
-              <!--img(src="./assets/img/content/my_about_1.jpg", alt="").about__photo-->
-            </div>
+            <div class="user-about__picture"><img class="about__photo" src="./assets/img/content/MyFoto-1.jpg" alt=""></div>
             <!--.user-about__title-->
             <div class="title user-about__title" style="background-image: url('./assets/img/decor/');font-size:30px;">Кто Я</div>
             <div class="user-about__text">
@@ -90,9 +99,6 @@
           </div>
         </div>
         <div class="about__right">
-          <svg class="triangle triangle_fill_beige about__triangles" viewbox="0 0 1000 100" preserveAspectRatio="none">
-            <polygon points="0,100 1000,100, 1000,0"></polygon>
-          </svg>
           <div class="about-data">
             <div class="about-data__description about-user-info">
               <div class="title about-user-info__title" style="background-image: url('./assets/img/decor/');font-size:34px;">Чем я могу быть</div>
@@ -304,7 +310,7 @@
             <ul class="navbar-menu">
               <li class="navbar-menu__item"><a href="page_works.html">Мои работы</a></li>
               <li class="navbar-menu__item"><a href="page1.html">Обо мне</a></li>
-              <li class="navbar-menu__item"><a href="index.html">Блог</a></li>
+              <li class="navbar-menu__item"><a href="page_blog.html">Блог</a></li>
               <li class="navbar-menu__item"><a href="index.html">Авторизация</a></li>
             </ul>
             <div class="footer-social">

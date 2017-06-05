@@ -1,0 +1,35 @@
+//- Created by serg on 31.05.17.
+section.section.hero-blog
+        .hero-blog__bg
+            //-img(src="assets/img/bd/portfolio_3.jpg", alt="").hero__bg-img
+            //-img(src="./assets/img/bd/portfolio_m.jpg", alt="").hero__bg-img
+
+        //- .hero-blog__title
+            //-img(src="./assets/img/decor/portfolio_header-3.png", alt="" ).section-title
+            //-img(src="./assets/img/decor/portfolio_header-3.png", alt="").section-title
+        .user.hero-blog__user-block
+            .user__photo
+                .user__photo-avatar
+                    //-img(src="./assets/img/content/user0.png", style="width:100%", alt="Фото автора").user__photo-img
+                    img(src="./assets/img/content/Avatar_1.png",style="width:100%", alt="Фото автора").user__photo-img
+            .user-blog__title
+                +title('Блог', 'blog_header.png', 'user-blog__title', '63px')
+
+            .user-blog__desc Статьи, которые я написал
+
+        .hero__socials-block
+            include ../common/social_icons
+
+        a(href="#").hamburger#hamburger
+            //-img(src="./assets/img/icons/hamburger.svg", alt="").hamburger__icon
+            span.hamburger__line
+            span.hamburger__line
+            span.hamburger__line
+
+
+
+block heder
+
+
+
+
