@@ -10,8 +10,9 @@
 .about__left, .about__right {
   //float: left;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  //flex-flow: row wrap;
+  flex-flow: column wrap;
+  //justify-content: center;
   flex: 1 1 380px;
   //width: 50%;
   position: relative; /* позиционируют треугольники */
@@ -28,6 +29,7 @@
 
   //background: $beige1; /* для макета forest */
   //align-self: flex-start;
+  align-items: center;
   background: $white;
 
 }
