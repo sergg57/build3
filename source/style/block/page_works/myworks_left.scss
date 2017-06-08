@@ -6,6 +6,7 @@
     min-height: 300px;
     display: flex;
     flex-flow: column nowrap;
+    //flex-direction: row;
     background-color: #f0efe9;
     //border: 1px solid black;
      @include tablets {
